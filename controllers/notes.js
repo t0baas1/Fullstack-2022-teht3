@@ -3,10 +3,10 @@ const Note = require('../models/note')
 
 notesRouter.get('/', async (request, response) => {
   const notes = await Note.find({})
-  response.json(notes.map(note => note.toJSON()))
+  response.json(notes)
 })
 
-notesRouter.get('/:id', async (request, response, next) => {
+notesRouter.get('/:id', async (request, response) => {
   const note = await Note.findById(request.params.id)
     if (note) {
       response.json(note)

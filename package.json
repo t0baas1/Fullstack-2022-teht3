@@ -17,7 +17,7 @@
     "express-async-errors": "^3.1.1",
     "heroku": "^7.60.0",
     "logger": "^0.0.1",
-    "mongoose": "^6.2.9"
+    "mongoose": "^6.2.10"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
